@@ -1,28 +1,174 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sorriso Maroto - Clínica Otontológica - Página Principal</title>
-    <link rel="stylesheet" href="styles/styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./reset-footer-header.css">
+  <link rel="stylesheet" href="./home.css">
+  <title>Clinica Sorriso Maroto</title>
 </head>
+
 <body>
-    <header>
-        <!-- @Ambrosio99 - fica a vontade pra refatorar, inserindo apenas para já ter link para as outras páginas -->
-        <img src="/images/banners/1.png" alt="Logo da Clínica Sorriso Maroto" height="100px">
-        <nav>
-            <ul>
-                <li><a href="index.html">Início</a></li>
-                <li><a href="especialidades.html">Especialidades</a></li>
-                <li><a href="agendamento.html">Agendamento</a></li>
-                <li><a href="contato.html">Contato</a></li>
-            </ul>
-        </nav>
-        <a href="login.html">Login</a>
-    </header>
-    <main>
-        <h2>Body</h2>
-    </main>
-    <footer>Placeholder Footer @2023 Copy Equipe01SuperTeamDevFront</footer>
+  <header class="header-bg">
+    <nav class="container-content header-nav">
+      <img src="./images/home/sorrisoMarotologo.svg" alt="logotipo sorriso maroto">
+      <ul class="nav-menu">
+        <li><a href="./index.html">Inicio</a></li>
+        <li><a href="">Serviços</a></li>
+        <li><a href="">Agendamento</a></li>
+        <li><a href="">Contato</a></li>
+      </ul>
+      <a href="" class="link-login">Entre ou cadastre-se</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="intro-bg">
+      <div class="intro-header container-content">
+        <div class="intro-text">
+          <h1>Cuide da sua saúde bucal hoje!</h1>
+          <p>Nossa clínica oferece um conceito inovador em saúde, proporcionando tudo em um só lugar para a sua comodidade e praticidade. De medicina especializada até uma odontologia de ponta, contamos com uma ampla gama de serviços focados em um atendimento altamente qualificado.</p>
+          <a href="" class="intro-agendar">Agendar consulta</a>
+        </div>
+        <img src="./images/home/intro-home.jpg" alt="protótipo dental">
+      </div>
+    </section>
+    <section class="container-content">
+      <div class="about">
+        <h2>Sobre nós</h2>
+        <img src="./images/home/clinica-sobre.jpg" alt="clinica odontologica">
+        <div class="about-text">
+          <p>Mais do que uma clínica odontológica, a Sorriso Maroto é um lugar onde você se sente em casa para cuidar da saúde bucal com profissionalismo, tecnologia, respeito e muito carinho.</p>
+          <p>A combinação de atendimento odontológico especializado com laboratório próprio confere à Sorriso Maroto eficiência e agilidade nos tratamentos. O laboratório é reconhecido por sua precisão e atende outros Cirurgiões-Dentistas e Cursos de Especialização em todo o Brasil.</p>
+          <p>Todos os detalhes são pensados para oferecer uma experiência diferenciada onde eficácia clínica combina com acolhimento, resultados com presença e atenção, inovação com tradição, tratamento com vínculo e relações com respeito.
+          </p>
+          <a href="">Conheça nossos serviços ➞</a>
+        </div>
+      </div>
+      <hr>
+      <div class="team">
+        <h3>Nossa Equipe</h3>
+        <p>A equipe da Sorriso Maroto combina qualificação, tecnologia e atendimento humanizado para que você a melhor experiência. </p>
+        <ul class="team-list">
+          <li>
+            <img src="./images/home/dr-01.jpg" alt="">
+            <p>Dra. Isabela Mendes</p>
+          </li>
+          <li>
+            <img src="./images/home/dr-02.jpg" alt="">
+            <p>Dr. Ricardo Almeida</p>
+          </li>
+          <li>
+            <img src="./images/home/dr-03.jpg" alt="">
+            <p>Dra. Camila Santos</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="vant-bg">
+      <div class="container-content">
+        <h3 class="vant-title">Nossas vantagens:</h3>
+        <ul class="vant-list">
+          <li class="vant-item">
+            <div class="item-flex">
+              <img src="./images/home/car-icon.svg" alt="Carro">
+              <h4>Estacionamento</h4>
+            </div>
+            <p>Disponibilizamos estacionamento próprio e gratuíto.</p>
+          </li>
+          <li class="vant-item">
+            <div class="item-flex">
+              <img src="./images/home/profi-icon.svg" alt="Profissional">
+              <h4>Profissionais Especializados</h4>
+            </div>
+            <p>Contamos com uma ampla equipe de profissionais altamente qualificados.</p>
+          </li>
+          <li class="vant-item">
+            <div class="item-flex">
+              <img src="./images/home/smile-icon.svg" alt="Smile">
+              <h4>Resultados Satisfatórios</h4>
+            </div>
+            <p>Temos como principal objetivo alcançar resultados eficientes e satisfatórios, garantindo o melhor sorriso aos pacientes.</p>
+          </li>
+          <li class="vant-item">
+            <div class="item-flex">
+              <img src="./images/home/ampl-icon.svg" alt="Predio">
+              <h4>Estrutura Ampla e Moderna</h4>
+            </div>
+            <p>Disponibilizamos aos nossos pacientes um ambiente agradável e confortável para garantir um atendimento de excelência.</p>
+          </li>
+          <li class="vant-item">
+            <div class="item-flex">
+              <img src="./images/home/star-icon.svg" alt="Estrela">
+              <h4>Experiência e Credibilidade</h4>
+            </div>
+            <p>Desde 1999 atendendo pacientes com muita dedicação, temos alcançado a confiança de todos.</p>
+          </li>
+          <li class="vant-item">
+            <div class="item-flex">
+              <img src="./images/home/local-icon.svg" alt="Localização">
+              <h4>Localização</h4>
+            </div>
+            <p>Clínica localizada em região central de fácil acesso.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="container-content">
+      <h2 class="visit-title">O movimento mais bonito do ser humano é <span>o sorriso!</span></h2>
+      <ul class="visit-list">
+        <li class="visit-item">
+          <img src="./images/home/visit-01.jpg" alt="Tecnologia odontologica">
+          <h3>Equipe Especializada</h3>
+          <p>Com técnicas avançadas e equipamentos tecnológicos, oferecemos tratamentos personalizados de acordo com a necessidade de cada paciente. Além de questões estéticas, como Lentes de Contato Dentais e Clareamento, também somos especialistas em tratamentos de saúde.</p>
+          <a href="">Saiba mais ➞</a>
+        </li>
+        <li class="visit-item">
+          <img src="./images/home/visit-02.jpg" alt="Sorriso bonito">
+          <h3>Transforme seu sorriso!</h3>
+          <p>Renove sua autoestima e busque o sorriso que você sempre sonhou. Auxiliamos você a melhorar sua saúde bucal com tratamentos seguros e com alta tecnologia. Entre em contato conosco para marcar uma consulta inicial! Estamos te esperando!</p>
+          <a href="">Entre em contato ➞</a>
+        </li>
+        <li>
+
+        </li>
+      </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer-bg">
+    <div class="container-content footer-div">
+      <ul class="adress">
+        <img src="./images/icons/local.svg" alt="">
+        <li>Rua ubaldino correia, 222 - Vista alegre</li>
+        <img src="./images/icons/telephone.svg" alt="">
+        <li>+55 (22) 9 9292-9292</li>
+        <img src="./images/icons/email.svg" alt="">
+        <li>clinica.maroto@gmail.com</li>
+      </ul>
+      <nav class="footer-menu">
+        <a href="./index.html">Inicio</a>
+        <a href="">Serviços</a>
+        <a href="">Agendamento</a>
+        <a href="">Contato</a>
+      </nav>
+      <ul class="service-time">
+        <img src="./images/home/sorrisoMarotologo.svg" alt="Logotipo sorriso maroto">
+        <li>Seg a Sex das 08:00 às 18:00</li>
+        <li>Sábados das 08:00 às 13:00</li>
+        <ul class="social">
+          <li><a href=""><img src="./images/icons/instagram.svg" alt=""></a></li>
+          <li><a href=""><img src="./images/icons/facebook.svg" alt=""></a></li>
+          <li><a href=""><img src="./images/icons/twitter.svg" alt=""></a></li>
+        </ul>
+      </ul>
+    </div>
+  </footer>
 </body>
+
 </html>
