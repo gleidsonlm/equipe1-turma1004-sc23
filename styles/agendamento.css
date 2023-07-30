@@ -23,15 +23,15 @@
 
 #agendamento > main .wrapper {
   max-width: 1080px;
-  display: flex;
-  flex-direction: row;
-  gap: 8em;
-  align-items: center;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 1em;
+  margin: 2em 0px;
 }
 
 #agendamento > main section {
   max-width: 1080px;
+  margin: 0px;
 }
 
 #agendamento .banner {
@@ -69,6 +69,10 @@
 
 #agendamento .banner-text button:hover span {
   color: var(--md-sys-color-secondary);
+}
+
+#especialidades {
+  grid-column: 1 / span 1;
 }
 
 #especialidades-lista {
@@ -113,15 +117,24 @@
 }
 
 #calendario {
+  grid-column: 2 / span 1;
   padding: 1em;
   border-radius: 1em;
 }
 
-.mensal {
-  margin-top: 2em;
-  display: grid;
-  grid-template-columns: 1fr;
-  justify-items: center;
+#calendario h3 {
+  font-size: 1.5em;
+  padding: 0.25em 0px;
+  margin-top: 1em;
+  text-align: center;
+  border-bottom: 1px solid var(--md-sys-color-primary);
+}
+
+.mes-seletor {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1em 0px;
 }
 
 .semanal {
@@ -143,13 +156,12 @@
 }
 
 .dias label {
-  height: 2em;
-  width: 2em;
+  height: 1.5em;
+  width: 1.5em;
   display: flex;
   justify-content: center;
   align-items: center;
   cursor: pointer;
-  margin: 0.25em;
 }
 
 .dias input[type="radio"]:checked + label {
@@ -162,4 +174,27 @@
   background-color: var(--md-sys-color-on-primary);
   color: var(--md-sys-color-primary);
   border-radius: 50%;
+}
+
+#especialistas {
+  grid-column: 1 / span 2;
+}
+
+#especialistas article {
+  border-radius: 1em;
+  margin-bottom: 1px
+}
+
+#especialistas label {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 1em;
+  border-radius: 1em;
+  gap:1em
+}
+
+.esp-avatar {
+  height: 4em;
+  width: 4em;
 }
