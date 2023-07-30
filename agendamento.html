@@ -4,30 +4,155 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sorriso Maroto - Clínica Otontológica - Agendamento</title>
-    <link rel="stylesheet" href="styles/styles.css">
-</head>
-<body id="agendamento" class="on-primary-container primary-text">
-    <div id="page" class="primary-container">
-        <header>Placeholder Header</header>
-        <main>
-            <header>
-                <h2 class="title-large">Agende sua consulta com praticidade e conforto.</h2>
-                <div class="banner"></div>
-            </header>
-            <section class="primary-container on-primary-text hero">
-                <p>Escolha a especialidade que deseja atendimento, a data que  deseja ser atendido, e quais profissionais gostaria de ser atendido.</p>
-            </section>
-            <section id="especialidades-lista">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">  
+    <link rel="stylesheet" href="/styles/reset-footer-header.css">
+    <link rel="stylesheet" href="/styles/agendamento.css">
+  </head>
+    <body id="agendamento" class="primary primary-text">
+        <header class="">
+            <nav class=" header-nav">
+            <img src="/images/home/sorrisoMarotologo.svg" alt="logotipo sorriso maroto">
+            <ul class="nav-menu">
+                <li><a href="/index.html">Inicio</a></li>
+                <li><a href="/servicos.html">Serviços</a></li>
+                <li><a href="/agendamento.html">Agendamento</a></li>
+                <li><a href="/login.html">Contato</a></li>
+            </ul>
+            <a href="" class="link-login">TODO: avatar </a>
+            </nav>
+            <div class="banner">
+                <img src="/images/banners/agendamento.jpg" alt="banner">
+                <span class="banner-text on-secondary-text">
+                    <h2 class="title-large">Agende sua consulta com praticidade e conforto.</h2>
+                    <button
+                        type="button"
+                        title="Clique para agendar agora"
+                        class="secondary"
+                    ><span class="on-secondary-text">Agendar agora</span></button>
+                    <p>Escolha a especialidade que deseja atendimento, a data que  deseja ser atendido, e quais profissionais gostaria de ser atendido.</p>
+                </span>
+            </div>
+        </header>
+    <main class="background">
+        <div class="wrapper">            
+            <section id="especialidades" class="on-primary">
                 <form action="">
-                    <fieldset>
-                        <legend>Especialidades</legend>
-                        <input type="radio" name="especialidade" id="ortodontia" value="ortodontia" placeholder="ortodontia">
-                        <label for="especialidade1">Ortodontia</label>
+                    <fieldset id='especialidades-lista'
+                    class="surface-container">
+                        <h3
+                        class="title-medium"
+                        >Especialidades</h3>
+                        <label for="ortodontia">
+                            <input type="radio" name="especialidade" id="ortodontia" value="ortodontia" placeholder="ortodontia" checked>
+                            Ortodontia
+                        </label>
+                        <label for="odontopediatria">
+                            <input type="radio" name="especialidade" id="odontopediatria" value="odontopediatria" placeholder="odontopediatria">
+                            Odontopediatria
+                        </label>
+                        <label for="endodontia">
+                            <input type="radio" name="especialidade" id="endodontia" value="endodontia" placeholder="endodontia">
+                            Endodontia
+                        </label>
+                        <label for="periodontia">
+                            <input type="radio" name="especialidade" id="periodontia" value="periodontia" placeholder="periodontia">
+                            Periodontia
+                        </label>
+                        <label for="protese-dentaria">
+                            <input type="radio" name="especialidade" id="protese-dentaria" value="protese-dentaria" placeholder="protese-dentaria">
+                            Prótese Dentária
+                    </label>
                     </fieldset>
                 </form>
             </section>
-        </main>
-        <footer>Placeholder Footer</footer>
-    </div>
-</body>
+            <section id="calendario" class="surface-container on-surface-variant">
+                <div class="calendario ">
+                    <option value="data">Selecione uma data</option>
+                    <h3>Quinta, 17 de Agosto</h3>
+                    <div class="mensal">Agosto 2023</div>
+                    <div class="semanal">
+                        <!-- Dias da semana -->
+                        <div class="dias">Dom</div>
+                        <div class="dias">Seg</div>
+                        <div class="dias">Ter</div>
+                        <div class="dias">Qua</div>
+                        <div class="dias">Qui</div>
+                        <div class="dias">Sex</div>
+                        <div class="dias">Sab</div>
+                        <!-- Week 1 -->
+                        <div class="dias empty"></div>
+                        <div class="dias empty"></div>
+                        <div class="dias"><input type="radio" name="data" value="1" id="data1"><label for="data1">1</label></div>
+                        <div class="dias"><input type="radio" name="data" value="2" id="data2"><label for="data2">2</label></div>
+                        <div class="dias"><input type="radio" name="data" value="3" id="data3"><label for="data3">3</label></div>
+                        <div class="dias"><input type="radio" name="data" value="4" id="data4"><label for="data4">4</label></div>
+                        <div class="dias"><input type="radio" name="data" value="5" id="data5"><label for="data5">5</label></div>
+                        <div class="dias"><input type="radio" name="data" value="6" id="data6"><label for="data6">6</label></div>
+                        <div class="dias"><input type="radio" name="data" value="7" id="data7"><label for="data7">7</label></div>
+                        <div class="dias"><input type="radio" name="data" value="8" id="data8"><label for="data8">8</label></div>
+                        <div class="dias"><input type="radio" name="data" value="9" id="data9"><label for="data9">9</label></div>
+                        <div class="dias"><input type="radio" name="data" value="10" id="data10"><label for="data10">10</label></div>
+                        <div class="dias"><input type="radio" name="data" value="11" id="data11"><label for="data11">11</label></div>
+                        <div class="dias"><input type="radio" name="data" value="12" id="data12"><label for="data12">12</label></div>
+                        <div class="dias"><input type="radio" name="data" value="13" id="data13"><label for="data13">13</label></div>
+                        <div class="dias"><input type="radio" name="data" value="14" id="data14"><label for="data14">14</label></div>
+                        <div class="dias"><input type="radio" name="data" value="15" id="data15"><label for="data15">15</label></div>
+                        <div class="dias"><input type="radio" name="data" value="16" id="data16"><label for="data16">16</label></div>
+                        <div class="dias"><input type="radio" name="data" value="17" id="data17" checked><label for="data17">17</label></div>
+                        <div class="dias"><input type="radio" name="data" value="18" id="data18"><label for="data18">18</label></div>
+                        <div class="dias"><input type="radio" name="data" value="19" id="data19"><label for="data19">19</label></div>
+                        <div class="dias"><input type="radio" name="data" value="20" id="data20"><label for="data20">20</label></div>
+                        <div class="dias"><input type="radio" name="data" value="21" id="data21"><label for="data21">21</label></div>
+                        <div class="dias"><input type="radio" name="data" value="22" id="data22"><label for="data22">22</label></div>
+                        <div class="dias"><input type="radio" name="data" value="23" id="data23"><label for="data23">23</label></div>
+                        <div class="dias"><input type="radio" name="data" value="24" id="data24"><label for="data24">24</label></div>
+                        <div class="dias"><input type="radio" name="data" value="25" id="data25"><label for="data25">25</label></div>
+                        <div class="dias"><input type="radio" name="data" value="26" id="data26"><label for="data26">26</label></div>
+                        <div class="dias"><input type="radio" name="data" value="27" id="data27"><label for="data27">27</label></div>
+                        <div class="dias"><input type="radio" name="data" value="28" id="data28"><label for="data28">28</label></div>
+                        <div class="dias"><input type="radio" name="data" value="29" id="data29"><label for="data29">29</label></div>
+                        <div class="dias"><input type="radio" name="data" value="30" id="data30"><label for="data30">30</label></div>
+                        <div class="dias"><input type="radio" name="data" value="31" id="data31"><label for="data31">31</label></div>
+                        <div class="dias empty"></div>
+                        <div class="dias empty"></div>
+                        
+                        <!-- Continue with other weeks -->
+                        <!-- ... -->
+            
+                    </div>
+                </div>
+                        </section>
+        </div>
+    </main>
+    <footer class="footer-bg">
+        <div class="container-content footer-div">
+            <ul class="adress">
+            <li><img src="/images/icons/local.svg" alt=""></li>
+            <li>Rua ubaldino correia, 222 - Vista alegre</li>
+            <li><img src="/images/icons/telephone.svg" alt=""></li>
+            <li>+55 (22) 9 9292-9292</li>
+            <li><img src="/images/icons/email.svg" alt=""></li>
+            <li>clinica.maroto@gmail.com</li>
+            </ul>
+            <nav class="footer-menu">
+            <a href="/index.html">Inicio</a>
+            <a href="">Serviços</a>
+            <a href="">Agendamento</a>
+            <a href="">Contato</a>
+            </nav>
+            <ul class="service-time">
+            <li><img src="/images/home/sorrisoMarotologo.svg" alt="Logotipo sorriso maroto"></li>
+            <li>Seg a Sex das 08:00 às 18:00</li>
+            <li>Sábados das 08:00 às 13:00</li>
+            <li><ul class="social">
+                <li><a href=""><img src="/images/icons/instagram.svg" alt=""></a></li>
+                <li><a href=""><img src="/images/icons/facebook.svg" alt=""></a></li>
+                <li><a href=""><img src="/images/icons/twitter.svg" alt=""></a></li>
+            </ul></li>
+            </ul>
+        </div>
+        </footer>
+    </body>
 </html>
