@@ -51,9 +51,8 @@
   height: 100%;
 }
 
-
 #agendamento .banner-text button {
-  padding: 0.5em;
+  min-width: 4em;
   border-radius: 1em;
   transition: background-color 0.2s ease-in-out;
 }
@@ -78,7 +77,6 @@
   border-radius: 1em;
   gap: 1em;
 }
-
 
 #especialidades-lista input[type="radio"] {
   -webkit-appearance: none;
@@ -145,8 +143,8 @@
 }
 
 .dias label {
-  height: 1.5em;
-  width: 1.5em;
+  height: 1.75em;
+  width: 1.75em;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -171,7 +169,7 @@
 
 #especialistas article {
   border-radius: 1em;
-  margin-bottom: 1px
+  margin-bottom: 1px;
 }
 
 #especialistas label {
@@ -181,14 +179,93 @@
   align-items: center;
   padding: 1em;
   border-radius: 1em;
-  gap:1em
+  gap: 1em;
 }
 
-#especialistas label span{
+#especialistas label span {
   width: 100%;
 }
 
 .esp-avatar {
   height: 4em;
   width: 4em;
+}
+
+#especialistas input[type="checkbox"] {
+  -webkit-appearance: none;
+  appearance: none;
+  margin: 0;
+  font: inherit;
+  color: teal;
+  width: 1.15em;
+  height: 1.15em;
+  border: 0.15em solid teal;
+  border-radius: 0.15em;
+  transform: translateY(-0.075em);
+  display: grid;
+  place-content: center;
+}
+
+#especialistas input[type="checkbox"]::before {
+  content: "";
+  width: 0.65em;
+  height: 0.65em;
+  clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
+  transform: scale(0);
+  transform-origin: bottom left;
+  transition: 120ms transform ease-in-out;
+  box-shadow: inset 1em 1em teal;
+}
+
+#especialistas input[type="checkbox"]:checked::before {
+  transform: scale(1);
+}
+
+#especialistas input[type="checkbox"]:focus {
+  outline: max(2px, 0.15em) solid currentColor;
+  outline-offset: max(2px, 0.15em);
+}
+
+#confirmacao {
+  grid-column: 1 / span 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#confirmacao div {
+  border-radius: 1em;
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5em;
+  width: 15em;
+}
+
+#confirmacao img {
+  height: 24px;
+  width: 24px;
+}
+
+#confirmacao h3 {
+  padding: 1em 0px;
+}
+
+#confirmacao p {
+  text-align: justify;
+}
+
+#confirmacao div #confirmar {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+#confirmar button {
+  padding: 0.5em;
+  border: none;
+}
+
+.cancelar {
+  grid-column: 2 / span 1;
 }
