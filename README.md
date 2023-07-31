@@ -3,13 +3,12 @@
 Trabalho realizado pela Equipe 01 da Turma 1004 do curso de Front-end estático na trilha de bootcamp de Front-end Angular Santander Coders 2023 promovido pela Ada Tech.
 
 ## Integrantes da Equipe
-- @lumaalmeida123
-- @Ambrosio99
-- @ionar
-- @gleidsonlm
+- [@lumaalmeida123](https://github.com/lumaalmeida123)
+- [@Ambrosio99](https://github.com/Ambrosio99)
+- [@ionar](https://github.com/ionar)
+- [@gleidsonlm](https://github.com/ionar)
 
 ## Requerimentos
-
 Crie um site comercial com tema livre (agencia de turismo, padaria, dentista...) que possua as seguintes 
 regras:
 1. [ X ] Utilize qualquer conceito de HTML e CSS, independente de terem sido apresentados em aula
