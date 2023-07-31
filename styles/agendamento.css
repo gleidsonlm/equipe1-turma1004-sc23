@@ -15,6 +15,24 @@
   max-width: 1080px;
 }
 
+#agendamento .user-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.5em;
+  padding-right: 0.5em;
+  border-radius: 1em;
+  border-top-left-radius: 2em;
+  border-bottom-left-radius: 2em;
+  border-bottom: 1px solid var(--md-sys-color-background);
+  border-right: 1px solid var(--md-sys-color-background);
+}
+
+#agendamento .user-menu img {
+  height: 4em;
+  width: 4em;
+}
+
 #agendamento > main {
   display: flex;
   justify-content: center;
@@ -53,6 +71,7 @@
 
 #agendamento .banner-text button {
   min-width: 4em;
+  padding: 0.125em 1em;
   border-radius: 1em;
   transition: background-color 0.2s ease-in-out;
 }
@@ -266,6 +285,16 @@
   border: none;
 }
 
+.cancelar:hover {
+  background-color: var(--md-sys-color-error);
+  color: var(--md-sys-color-on-error);
+}
+
 .cancelar {
   grid-column: 2 / span 1;
+}
+
+.confirmar:hover {
+  background-color: var(--md-sys-color-primary);
+  color: var(--md-sys-color-on-primary);
 }
