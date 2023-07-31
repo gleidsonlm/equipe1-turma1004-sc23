@@ -178,9 +178,14 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
   padding: 1em;
   border-radius: 1em;
   gap:1em
+}
+
+#especialistas label span{
+  width: 100%;
 }
 
 .esp-avatar {
