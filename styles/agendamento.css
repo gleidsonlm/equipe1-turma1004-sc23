@@ -58,11 +58,15 @@
   width: 100%;
 }
 
+#agendamento .banner img {
+  max-height: 50vh;
+}
+
 #agendamento .banner-text {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: flex-start;
   gap: 1em;
   padding: 2em;
   text-align: center;
@@ -74,6 +78,13 @@
   padding: 0.125em 1em;
   border-radius: 1em;
   transition: background-color 0.2s ease-in-out;
+}
+
+#agendamento .banner-text span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5em;
 }
 
 #agendamento .banner-text button:hover {
