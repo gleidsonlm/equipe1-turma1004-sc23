@@ -49,15 +49,10 @@
   padding: 2em;
   text-align: center;
   height: 100%;
-  font-size: 1.5em;
 }
 
-#agendamento .banner-text h2 {
-  font-size: 2em;
-}
 
 #agendamento .banner-text button {
-  font-size: 1.125em;
   padding: 0.5em;
   border-radius: 1em;
   transition: background-color 0.2s ease-in-out;
@@ -81,13 +76,9 @@
   width: 100%;
   padding: 2em 1em;
   border-radius: 1em;
-  font-size: 1.25em;
   gap: 1em;
 }
 
-#especialidades-lista h3 {
-  font-size: 1.5em;
-}
 
 #especialidades-lista input[type="radio"] {
   -webkit-appearance: none;
@@ -123,7 +114,6 @@
 }
 
 #calendario h3 {
-  font-size: 1.5em;
   padding: 0.25em 0px;
   margin-top: 1em;
   text-align: center;
@@ -143,7 +133,6 @@
 }
 
 .dias {
-  font-size: 1.25em;
   text-align: center;
 }
 
