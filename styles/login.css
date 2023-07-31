@@ -1,55 +1,70 @@
+main {
+  min-height: calc(100vh - 344px);
+}
+
 .login {
-    background-color: #fff;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  background-color: #fff;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .login-container {
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
-    padding: 20px;
-    margin: 40px;
-    width: 400px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  margin: 40px;
+  width: 400px;
 }
 
 .login-container h2 {
-    text-align: center;
-    margin-bottom: 20px;
-    color:#00a1a1;
-    font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #00a1a1;
+  font-weight: bold;
 }
 
 .login-container h2 a {
-    text-decoration: none;
-    color: #018585;
+  text-decoration: none;
+  color: #018585;
 }
 
 .login-container h2 a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 .login-container label {
-    display: block;
-    margin-bottom: 10px;
-    color: #666;
+  display: block;
+  margin-bottom: 10px;
+  color: #666;
 }
 .login-container input[type="text"],
 .login-container input[type="password"] {
-    width: 95%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    margin-bottom: 15px;
+  width: 95%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 15px;
 }
 .login-container button {
-    background-color: #00a1a1;
-    color: #fff;
-    padding: 10px 15px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    width: 100%;
+  background-color: #00a1a1;
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+}
+.login-container input[type="password"] {
+  margin-bottom: 5px;
+}
+a.red-senha {
+  margin-bottom: 15px;
+  color: #666;
+  display: block;
+  font-size: 0.85rem;
+  text-decoration: underline;
+  text-align: end;
 }
