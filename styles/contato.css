@@ -1,0 +1,67 @@
+.contact {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}
+.contact-01 {
+  display: grid;
+  background-color: #007070;
+  padding: 3rem;
+  gap: 1.25rem;
+  border-radius: 4px 0 0 4px;
+}
+.contact-01 .social {
+  justify-content: flex-start;
+  gap: 1.25rem;
+}
+.contact-02 {
+  padding: 2rem;
+  background-color: #ededed;
+  border-radius: 0 4px 4px 0;
+}
+.contact-02 h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #007070;
+  margin-bottom: 2rem;
+}
+.contact-02 button {
+  color: white;
+  padding: 0.75rem 1rem;
+  background-color: #007070;
+  border-radius: 4px;
+  font-weight: 700;
+  font-size: 1.175rem;
+  border: none;
+  cursor: pointer;
+}
+.contact-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  place-self: start;
+}
+.contact-form label {
+  display: block;
+  margin-bottom: 4px;
+  font-size: 1rem;
+  font-weight: 500;
+}
+.contact-form input[type="textarea"],
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+  font-size: 1rem;
+  font-weight: 400;
+  background: #f7f7f7;
+  border: 1px solid #ededed;
+  padding: 12px;
+  border-radius: 4px;
+  width: 100%;
+  box-sizing: border-box;
+}
+iframe {
+  border-radius: 4px;
+  margin-top: 1.4rem;
+}
